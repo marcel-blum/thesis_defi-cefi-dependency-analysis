@@ -1,0 +1,72 @@
+{\renewcommand{\arraystretch}{0.90}
+\begin{tabular}{lccc}
+    \toprule
+    \textbf{Variable} & \textbf{Lag} & \textbf{$F$-Statistic} & \textbf{$p$-Value} \\ 
+    \midrule
+    \multicolumn{4}{l}{\textit{Panel A: On-Chain Variables}} \\ 
+    \cmidrule(lr){1-4}
+    Global\_Stablecoins\_Mcap\_USD\_log\_return & 5 & 7.1629 & $<$0.0001$^{***}$ \\ 
+    Global\_Merchandise\_Vol\_USD\_log\_return & 1 & 47.9506 & $<$0.0001$^{***}$ \\ 
+    Global\_Gross\_Revenue\_USD\_log\_return & 1 & 45.3457 & $<$0.0001$^{***}$ \\ 
+    \midrule
+    \multicolumn{4}{l}{\textit{Panel B: Cryptocurrency Returns}} \\ 
+    \cmidrule(lr){1-4}
+    BTCUSDT\_Log\_Return & 1 & 2365.5138 & $<$0.0001$^{***}$ \\ 
+    ETHUSDT\_Log\_Return & 1 & 4582.0418 & $<$0.0001$^{***}$ \\ 
+    BNBUSDT\_Log\_Return & 5 & 259.7628 & $<$0.0001$^{***}$ \\ 
+    XRPUSDT\_Log\_Return & 1 & 758.5781 & $<$0.0001$^{***}$ \\ 
+    SOLUSDT\_Log\_Return & 5 & 232.9464 & $<$0.0001$^{***}$ \\ 
+    \midrule
+    \multicolumn{4}{l}{\textit{Panel C: Cryptocurrency Trading Volume}} \\ 
+    \cmidrule(lr){1-4}
+    BTCUSDT\_Vol\_LogGrowth & 1 & 17.2120 & $<$0.0001$^{***}$ \\ 
+    ETHUSDT\_Vol\_LogGrowth & 1 & 14.4301 & 0.0001$^{***}$ \\ 
+    BNBUSDT\_Vol\_LogGrowth & 1 & 22.7389 & $<$0.0001$^{***}$ \\ 
+    XRPUSDT\_Vol\_LogGrowth & 2 & 17.6184 & $<$0.0001$^{***}$ \\ 
+    SOLUSDT\_Vol\_LogGrowth & 5 & 6.1396 & $<$0.0001$^{***}$ \\ 
+    \midrule
+    \multicolumn{4}{l}{\textit{Panel D: Exchange Rates}} \\ 
+    \cmidrule(lr){1-4}
+    EUR\_USD\_log\_return & 1 & 38.2431 & $<$0.0001$^{***}$ \\ 
+    EUR\_CNY\_log\_return & 1 & 4.3639 & 0.0368$^{*}$ \\ 
+    USD\_CNY\_log\_return & 1 & 17.4843 & $<$0.0001$^{***}$ \\ 
+    \midrule
+    \multicolumn{4}{l}{\textit{Panel E: Monetary Policy}} \\ 
+    \cmidrule(lr){1-4}
+    USA\_Rate\_Hike & 5 & 1.4714 & 0.1960 \\ 
+    USA\_Rate\_Cut & 1 & 0.3463 & 0.5563 \\ 
+    EZ\_Rate\_Hike & 2 & 1.1797 & 0.3076 \\ 
+    EZ\_Rate\_Cut & 1 & 0.6074 & 0.4359 \\ 
+    China\_Rate\_Cut & 5 & 0.8751 & 0.4969 \\ 
+    \midrule
+    \multicolumn{4}{l}{\textit{Panel F: Macroeconomic Variables}} \\ 
+    \cmidrule(lr){1-4}
+    USA\_D\_GDP & 3 & 2.9727 & 0.0306$^{*}$ \\ 
+    EZ\_D\_GDP & 1 & 7.3055 & 0.0069$^{*}$ \\ 
+    USA\_D\_CPI & 1 & 11.3653 & 0.0008$^{***}$ \\ 
+    EZ\_D\_CPI & 1 & 3.1726 & 0.0750 \\ 
+    CHN\_D\_CPI & 1 & 2.8098 & 0.0939 \\ 
+    USA\_D\_UR & 3 & 4.4417 & 0.0041$^{*}$ \\ 
+    EZ\_D\_UR & 1 & 23.1294 & $<$0.0001$^{***}$ \\ 
+    CHN\_D\_UR & 5 & 1.1842 & 0.3144 \\ 
+    \midrule
+    \multicolumn{4}{l}{\textit{Panel G: Money Supply / Liquidity}} \\ 
+    \cmidrule(lr){1-4}
+    USA\_D\_Liquidity & 1 & 10.3854 & 0.0013$^{***}$ \\ 
+    EZ\_D\_Liquidity & 2 & 2.3679 & 0.0939 \\ 
+    CHN\_D\_Liquidity & 1 & 0.4014 & 0.5265 \\ 
+    \midrule
+    \multicolumn{4}{l}{\textit{Panel H: Equity \& Commodity Indices}} \\ 
+    \cmidrule(lr){1-4}
+    SP500\_log\_return & 1 & 186.7597 & $<$0.0001$^{***}$ \\ 
+    STOXX600\_log\_return & 1 & 45.1264 & $<$0.0001$^{***}$ \\ 
+    CSI300\_log\_return & 1 & 9.8664 & 0.0017$^{*}$ \\ 
+    MSCIEM\_log\_return & 2 & 13.4066 & $<$0.0001$^{***}$ \\ 
+    GlobalGold\_log\_return & 1 & 41.2047 & $<$0.0001$^{***}$ \\ 
+    SOX\_log\_return & 1 & 159.1809 & $<$0.0001$^{***}$ \\ 
+    \bottomrule
+  \end{tabular}}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: H$_0$: Variable $X_i$ does not Granger-cause \textit{Global\_TVL\_USD\_log\_return}. F-test (SSR) reported at the lag $\ell \in \{1, \dots, 5\}$ yielding the lowest p-value. Bonferroni-corrected significance threshold: $\alpha^* = 0.05 / 38 \approx 0.0013$. 23 of 38 variables are significant after Bonferroni correction; 28 of 38 at the uncorrected $\alpha = 0.05$ level. $^{***}$ p$<\alpha^*$ (Bonferroni); $^{*}$ p$<$0.05 (uncorrected).
+\end{minipage}

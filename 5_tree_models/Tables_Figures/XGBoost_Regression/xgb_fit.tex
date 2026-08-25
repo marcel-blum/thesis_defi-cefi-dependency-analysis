@@ -1,0 +1,29 @@
+\begin{tabular}{lc}
+  \toprule
+  \textbf{Metric} & \textbf{Value} \\ 
+  \midrule
+  N (Train) & 1566 \\ 
+  N (Test) & 392 \\ 
+  Features & 38 \\ 
+  n\_estimators & 500 \\ 
+  max\_depth & 4 \\ 
+  learning\_rate & 0.01 \\ 
+  subsample & 0.85 \\ 
+  colsample\_bytree & 1.0 \\ 
+   &  \\ 
+  R² (Train) & 0.5879 \\ 
+  RMSE (Train) & 0.0177 \\ 
+  MAE (Train) & 0.0132 \\ 
+  OOS R² (Test) & 0.1158 \\ 
+  RMSE (Test) & 0.0242 \\ 
+  MAE (Test) & 0.0175 \\ 
+  CV R² (mean) & 0.1260 \\ 
+  CV R² (std) & 0.0249 \\ 
+  CV RMSE (mean) & 0.0248 \\ 
+  CV RMSE (std) & 0.0067 \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: XGBRegressor (XGBoost), gradient-boosted regression trees (histogram method). Hyperparameters selected via 5-fold blocked cross-validation on the training set, parallelized across all candidate combinations (joblib). Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead); the ensemble is fixed after Stage 2 and not re-estimated during rolling evaluation. OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.
+\end{minipage}

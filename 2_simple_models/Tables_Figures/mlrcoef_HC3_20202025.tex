@@ -1,0 +1,67 @@
+{\renewcommand{\arraystretch}{0.90}
+\begin{tabular}{lcccc}
+  \toprule
+  \textbf{Variable} & \textbf{$\hat{\beta}$} & \textbf{Std. Error} & \textbf{t-Statistic} & \textbf{p-Value} \\ 
+  \midrule
+  Intercept & 0.0093*** & 0.0035 & 2.6900 & 0.0071 \\ 
+  Global\_Stablecoins\_Mcap\_USD\_log\_return & 0.6995*** & 0.2324 & 3.0103 & 0.0026 \\ 
+  Global\_Merchandise\_Vol\_USD\_log\_return & -0.0015 & 0.0060 & -0.2576 & 0.7967 \\ 
+  Global\_Gross\_Revenue\_USD\_log\_return & 0.0223** & 0.0105 & 2.1233 & 0.0337 \\ 
+  BTCUSDT\_Log\_Return & 0.0119 & 0.0488 & 0.2448 & 0.8066 \\ 
+  ETHUSDT\_Log\_Return & 0.0422 & 0.0403 & 1.0478 & 0.2947 \\ 
+  BNBUSDT\_Log\_Return & -0.0150 & 0.0337 & -0.4444 & 0.6568 \\ 
+  XRPUSDT\_Log\_Return & 0.0267 & 0.0189 & 1.4127 & 0.1577 \\ 
+  SOLUSDT\_Log\_Return & -0.0144 & 0.0237 & -0.6070 & 0.5438 \\ 
+  BTCUSDT\_Vol\_LogGrowth & -0.0057* & 0.0031 & -1.8467 & 0.0648 \\ 
+  ETHUSDT\_Vol\_LogGrowth & -0.0041 & 0.0038 & -1.0830 & 0.2788 \\ 
+  BNBUSDT\_Vol\_LogGrowth & 0.0070*** & 0.0024 & 2.9308 & 0.0034 \\ 
+  XRPUSDT\_Vol\_LogGrowth & 0.0059*** & 0.0019 & 3.0438 & 0.0023 \\ 
+  SOLUSDT\_Vol\_LogGrowth & 0.0002 & 0.0024 & 0.0863 & 0.9312 \\ 
+  EUR\_USD\_log\_return & -0.4027 & 0.2996 & -1.3439 & 0.1790 \\ 
+  EUR\_CNY\_log\_return & 0.2061 & 0.3206 & 0.6428 & 0.5204 \\ 
+  USD\_CNY\_log\_return & 0.0340 & 0.3842 & 0.0884 & 0.9296 \\ 
+  USA\_Rate\_Hike & 0.0064 & 0.0062 & 1.0409 & 0.2979 \\ 
+  USA\_Rate\_Cut & 0.0423 & 0.0453 & 0.9336 & 0.3505 \\ 
+  EZ\_Rate\_Hike & 0.0049 & 0.0073 & 0.6663 & 0.5052 \\ 
+  EZ\_Rate\_Cut & -0.0077 & 0.0136 & -0.5679 & 0.5701 \\ 
+  China\_Rate\_Cut & 0.0034 & 0.0041 & 0.8356 & 0.4034 \\ 
+  USA\_D\_GDP & -0.0020 & 0.0022 & -0.9175 & 0.3589 \\ 
+  EZ\_D\_GDP & -0.0060** & 0.0027 & -2.2143 & 0.0268 \\ 
+  USA\_D\_CPI & -0.0064** & 0.0028 & -2.3296 & 0.0198 \\ 
+  EZ\_D\_CPI & -0.0017 & 0.0022 & -0.7712 & 0.4406 \\ 
+  CHN\_D\_CPI & 0.0017 & 0.0022 & 0.7783 & 0.4364 \\ 
+  USA\_D\_UR & 0.0052** & 0.0024 & 2.1654 & 0.0304 \\ 
+  EZ\_D\_UR & -0.0047** & 0.0023 & -2.0036 & 0.0451 \\ 
+  CHN\_D\_UR & 0.0007 & 0.0016 & 0.4592 & 0.6461 \\ 
+  USA\_D\_Liquidity & -0.0034 & 0.0026 & -1.2923 & 0.1962 \\ 
+  EZ\_D\_Liquidity & -0.0008 & 0.0020 & -0.3928 & 0.6945 \\ 
+  CHN\_D\_Liquidity & 0.0016 & 0.0017 & 0.9141 & 0.3607 \\ 
+  SP500\_log\_return & 0.2920* & 0.1491 & 1.9585 & 0.0502 \\ 
+  STOXX600\_log\_return & -0.1215 & 0.1289 & -0.9432 & 0.3456 \\ 
+  CSI300\_log\_return & -0.0984 & 0.0985 & -0.9994 & 0.3176 \\ 
+  MSCIEM\_log\_return & 0.6330*** & 0.1388 & 4.5593 & $<$0.0001 \\ 
+  GlobalGold\_log\_return & 0.0084 & 0.0544 & 0.1544 & 0.8773 \\ 
+  SOX\_log\_return & -0.1985*** & 0.0655 & -3.0315 & 0.0024 \\ 
+   &  &  &  &  \\ 
+  N (Train) & 1566 &  &  &  \\ 
+  N (Test) & 392 &  &  &  \\ 
+  R² (Train) & 0.1348 &  &  &  \\ 
+  Adj. R² (Train) & 0.1133 &  &  &  \\ 
+  RMSE (Train) & 0.0257 &  &  &  \\ 
+  MAE (Train) & 0.0180 &  &  &  \\ 
+  F-Statistic & 4.4083*** &  &  &  \\ 
+  AIC & -6943.6080 &  &  &  \\ 
+  BIC & -6734.7130 &  &  &  \\ 
+  OOS R² (Test) & 0.0377 &  &  &  \\ 
+  RMSE (Test) & 0.0252 &  &  &  \\ 
+  MAE (Test) & 0.0185 &  &  &  \\ 
+  CV R² (mean) & 0.0312 &  &  &  \\ 
+  CV R² (std) & 0.0517 &  &  &  \\ 
+  CV RMSE (mean) & 0.0260 &  &  &  \\ 
+  CV RMSE (std) & 0.0068 &  &  &  \\ 
+  \bottomrule
+\end{tabular}}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: *** p$<$0.01, ** p$<$0.05, * p$<$0.1. HC3 heteroskedasticity-robust standard errors. Estimated on training set (first 80\% of observations). Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead). OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.
+\end{minipage}

@@ -1,0 +1,28 @@
+\begin{tabular}{lc}
+  \toprule
+  \textbf{Metric} & \textbf{Value} \\ 
+  \midrule
+  N (Train) & 1566 \\ 
+  N (Test) & 392 \\ 
+  Selected Vars & 38 \\ 
+  Interaction Terms & 4 \\ 
+  n\_splines & 15 \\ 
+  lam & 1000.0 \\ 
+   &  \\ 
+  R² (Train) & 0.1942 \\ 
+  Adj. R² (Train) & 0.1719 \\ 
+  RMSE (Train) & 0.0248 \\ 
+  MAE (Train) & 0.0175 \\ 
+  OOS R² (Test) & 0.0387 \\ 
+  RMSE (Test) & 0.0252 \\ 
+  MAE (Test) & 0.0183 \\ 
+  CV R² (mean) & 0.0341 \\ 
+  CV R² (std) & 0.0930 \\ 
+  CV RMSE (mean) & 0.0260 \\ 
+  CV RMSE (std) & 0.0073 \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: LinearGAM (pygam) with P-splines for main effects and linear product terms for interactions. Hyperparameters selected via 5-fold blocked cross-validation on the training set. Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead); model coefficients are fixed after Stage 2 and not re-estimated during rolling evaluation. OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.
+\end{minipage}

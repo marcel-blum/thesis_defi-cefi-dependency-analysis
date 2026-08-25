@@ -1,0 +1,42 @@
+\begin{tabular}{lcccc}
+  \toprule
+  \textbf{Variable} & \textbf{$\hat{\beta}$} & \textbf{Std. Error} & \textbf{t-Statistic} & \textbf{p-Value} \\ 
+  \midrule
+  Intercept & 0.0021*** & 0.0007 & 3.0849 & 0.0020 \\ 
+  Global\_Stablecoins\_Mcap\_USD\_log\_return & 0.0048*** & 0.0016 & 3.0818 & 0.0021 \\ 
+  Global\_Gross\_Revenue\_USD\_log\_return & 0.0034*** & 0.0013 & 2.5787 & 0.0099 \\ 
+  ETHUSDT\_Log\_Return & 0.0012 & 0.0011 & 1.1067 & 0.2684 \\ 
+  XRPUSDT\_Log\_Return & 0.0015 & 0.0010 & 1.4805 & 0.1387 \\ 
+  BTCUSDT\_Vol\_LogGrowth & -0.0037*** & 0.0011 & -3.3632 & 0.0008 \\ 
+  BNBUSDT\_Vol\_LogGrowth & 0.0027*** & 0.0009 & 2.9307 & 0.0034 \\ 
+  XRPUSDT\_Vol\_LogGrowth & 0.0027*** & 0.0009 & 2.9695 & 0.0030 \\ 
+  EUR\_USD\_log\_return & -0.0010 & 0.0007 & -1.3981 & 0.1621 \\ 
+  USA\_Rate\_Cut & 0.0014 & 0.0014 & 0.9962 & 0.3192 \\ 
+  USA\_D\_CPI & -0.0015** & 0.0007 & -2.2233 & 0.0262 \\ 
+  EZ\_D\_UR & -0.0015* & 0.0009 & -1.6597 & 0.0970 \\ 
+  USA\_D\_Liquidity & -0.0004 & 0.0007 & -0.5452 & 0.5856 \\ 
+  MSCIEM\_log\_return & 0.0046*** & 0.0008 & 5.7480 & $<$0.0001 \\ 
+  SOX\_log\_return & -0.0019** & 0.0009 & -2.1607 & 0.0307 \\ 
+   &  &  &  &  \\ 
+  N (Train) & 1566 &  &  &  \\ 
+  N (Test) & 392 &  &  &  \\ 
+  Selected Vars & 14 &  &  &  \\ 
+  $\alpha$ & 0.001 &  &  &  \\ 
+  l1\_ratio & 0.7 &  &  &  \\ 
+  R² (Train) & 0.1109 &  &  &  \\ 
+  Adj. R² (Train) & 0.1029 &  &  &  \\ 
+  RMSE (Train) & 0.0261 &  &  &  \\ 
+  MAE (Train) & 0.0181 &  &  &  \\ 
+  OOS R² (Test) & 0.0790 &  &  &  \\ 
+  RMSE (Test) & 0.0247 &  &  &  \\ 
+  MAE (Test) & 0.0181 &  &  &  \\ 
+  CV R² (mean) & 0.0516 &  &  &  \\ 
+  CV R² (std) & 0.0356 &  &  &  \\ 
+  CV RMSE (mean) & 0.0258 &  &  &  \\ 
+  CV RMSE (std) & 0.0069 &  &  &  \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: *** p$<$0.01, ** p$<$0.05, * p$<$0.1. HC3 heteroskedasticity-robust standard errors. Coefficients estimated on standardized features. Train/Test split: 80/20 (chronological). Hyperparameters selected via 5-fold blocked cross-validation on the training set. Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead). OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.
+\end{minipage}

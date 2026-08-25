@@ -1,0 +1,16 @@
+\begin{tabular}{lcccc}
+  \toprule
+  \textbf{Step} & \textbf{Active Set} & \textbf{$T\_R$} & \textbf{$p$-Value} & \textbf{Eliminated} \\ 
+  \midrule
+  1 & ARX, ENet, GAM, MLR, SVR, TFT, XGB & 8.2302 & $<$0.0001 & MLR \\ 
+  2 & ARX, ENet, GAM, SVR, TFT, XGB & 7.9360 & 0.0002 & GAM \\ 
+  3 & ARX, ENet, SVR, TFT, XGB & 7.9360 & $<$0.0001 & ENet \\ 
+  4 & ARX, SVR, TFT, XGB & 7.9360 & $<$0.0001 & ARX \\ 
+  5 & SVR, TFT, XGB & 7.9360 & $<$0.0001 & SVR \\ 
+  6 & TFT, XGB & 7.3129 & $<$0.0001 & XGB \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: Sequential elimination procedure of the Model Confidence Set At each step, the range statistic $T_R$ is computed over the active model set; if the bootstrap $p$-value falls below $\alpha = 0.10$, the model with the highest mean squared loss is eliminated.
+\end{minipage}

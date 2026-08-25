@@ -1,0 +1,52 @@
+\begin{table}[h]
+  \centering
+  \caption{\textit{Overview of Variables in the Pre-Screening Dataset (Prior to Correlation/VIF Analysis)}.}
+  \label{tab:compdata}
+  \begin{tabular}{lccc}
+    \toprule
+    \textbf{Variable} & \textbf{Category} & \textbf{Transformation} & \textbf{Definition} \\ 
+    \midrule
+    Global\_TVL\_USD\_log\_return & Dependent Variable & Log Return & Total Value Locked, entire DeFi ecosystem (USD) \\ 
+    Global\_Stablecoins\_Mcap\_USD\_log\_return & On-Chain Macro & Log Return & Global stablecoin market capitalization (USD) \\ 
+    Global\_Merchandise\_Vol\_USD\_log\_return & On-Chain Macro & Log Return & Global merchandise trading volume (USD) \\ 
+    Global\_Gross\_Revenue\_USD\_log\_return & On-Chain Macro & Log Return & Global gross protocol revenue (USD) \\ 
+    BTCUSDT\_Log\_Return & Crypto Returns & Log Return & Bitcoin price (USDT pair) \\ 
+    ETHUSDT\_Log\_Return & Crypto Returns & Log Return & Ethereum price (USDT pair) \\ 
+    BNBUSDT\_Log\_Return & Crypto Returns & Log Return & BNB price (USDT pair) \\ 
+    XRPUSDT\_Log\_Return & Crypto Returns & Log Return & XRP price (USDT pair) \\ 
+    SOLUSDT\_Log\_Return & Crypto Returns & Log Return & Solana price (USDT pair) \\ 
+    BTCUSDT\_Vol\_LogGrowth & Crypto Volume & Log Growth & Bitcoin trading volume (USDT pair) \\ 
+    ETHUSDT\_Vol\_LogGrowth & Crypto Volume & Log Growth & Ethereum trading volume (USDT pair) \\ 
+    BNBUSDT\_Vol\_LogGrowth & Crypto Volume & Log Growth & BNB trading volume (USDT pair) \\ 
+    XRPUSDT\_Vol\_LogGrowth & Crypto Volume & Log Growth & XRP trading volume (USDT pair) \\ 
+    SOLUSDT\_Vol\_LogGrowth & Crypto Volume & Log Growth & Solana trading volume (USDT pair) \\ 
+    EUR\_USD\_log\_return & Exchange Rates & Log Return & EUR/USD exchange rate \\ 
+    EUR\_CNY\_log\_return & Exchange Rates & Log Return & EUR/CNY exchange rate \\ 
+    USD\_CNY\_log\_return & Exchange Rates & Log Return & USD/CNY exchange rate \\ 
+    USA\_Rate\_Hike & Key Interest Rates & Dummy (0/1) & Fed rate hike regime \\ 
+    USA\_Rate\_Cut & Key Interest Rates & Dummy (0/1) & Fed rate cut regime \\ 
+    EZ\_Rate\_Hike & Key Interest Rates & Dummy (0/1) & ECB rate hike regime \\ 
+    EZ\_Rate\_Cut & Key Interest Rates & Dummy (0/1) & ECB rate cut regime \\ 
+    China\_Rate\_Cut & Key Interest Rates & Dummy (0/1) & PBoC rate cut regime \\ 
+    USA\_D\_GDP & GDP & Dummy (0/1) & USA GDP growth $<$ 2.5\% \\ 
+    EZ\_D\_GDP & GDP & Dummy (0/1) & Eurozone GDP growth $<$ 2.5\% \\ 
+    CHN\_D\_GDP & GDP & Dummy (0/1) & China GDP growth $<$ 2.5\% \\ 
+    USA\_D\_CPI & CPI & Dummy (0/1) & USA CPI $>$ 3.5\% or $<$ 0.5\% \\ 
+    EZ\_D\_CPI & CPI & Dummy (0/1) & Eurozone CPI $>$ 3.5\% or $<$ 0.5\% \\ 
+    CHN\_D\_CPI & CPI & Dummy (0/1) & China CPI $>$ 3.5\% or $<$ 2.5\% \\ 
+    USA\_D\_UR & Unemployment Rate & Dummy (0/1) & USA unemployment rate $>$ 6\% \\ 
+    EZ\_D\_UR & Unemployment Rate & Dummy (0/1) & Eurozone unemployment rate $>$ 9.5\% \\ 
+    CHN\_D\_UR & Unemployment Rate & Dummy (0/1) & China unemployment rate $>$ 5.7\% \\ 
+    USA\_D\_Liquidity & Money Supply & Dummy (0/1) & USA money supply: 0 = growth, 1 = contraction \\ 
+    EZ\_D\_Liquidity & Money Supply & Dummy (0/1) & Eurozone money supply: 0 = growth, 1 = contraction \\ 
+    CHN\_D\_Liquidity & Money Supply & Dummy (0/1) & China money supply: 0 = growth, 1 = contraction \\ 
+    SP500\_log\_return & Indices & Log Return & S\&P 500 \\ 
+    STOXX600\_log\_return & Indices & Log Return & STOXX Europe 600 \\ 
+    CSI300\_log\_return & Indices & Log Return & CSI 300 \\ 
+    MSCIWorld\_log\_return & Indices & Log Return & MSCI World \\ 
+    MSCIEM\_log\_return & Indices & Log Return & MSCI Emerging Markets \\ 
+    GlobalGold\_log\_return & Indices & Log Return & Gold \\ 
+    SOX\_log\_return & Indices & Log Return & Philadelphia Semiconductor Index (blockchain-sector proxy) \\ 
+    \bottomrule
+  \end{tabular}
+\end{table}

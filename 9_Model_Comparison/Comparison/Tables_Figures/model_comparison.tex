@@ -1,0 +1,17 @@
+\begin{tabular}{lccc}
+  \toprule
+  \textbf{Model} & \textbf{RMSE} & \textbf{MAE} & \textbf{OOS $R^2$} \\ 
+  \midrule
+  MLR & 0.0252 & 0.0185 & 0.0325 \\ 
+  Elastic Net & 0.0247 & 0.0181 & 0.0790 \\ 
+  GAM & 0.0252 & 0.0183 & 0.0387 \\ 
+  XGBoost & 0.0242 & 0.0175 & 0.1158 \\ 
+  SVR (RBF) & 0.0243 & 0.0178 & 0.1071 \\ 
+  ARX & 0.0245 & 0.0179 & 0.0903 \\ 
+  TFT & 0.0108 & 0.0071 & 0.8235 \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: RMSE and MAE in log-return units. OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$, computed on the held-out test set (last 20\% of observations, $N=392$) via rolling-origin one-step-ahead forecasts. All hyperparameters selected via 5-fold blocked cross-validation on the training set.
+\end{minipage}

@@ -1,0 +1,28 @@
+\begin{tabular}{lc}
+  \toprule
+  \textbf{Metric} & \textbf{Value} \\ 
+  \midrule
+  N (Train) & 1566 \\ 
+  N (Test) & 392 \\ 
+  Features & 38 \\ 
+  Kernel & RBF \\ 
+  C & 0.1 \\ 
+  epsilon & 0.01 \\ 
+  gamma & 0.001 \\ 
+   &  \\ 
+  R² (Train) & 0.1746 \\ 
+  RMSE (Train) & 0.0251 \\ 
+  MAE (Train) & 0.0173 \\ 
+  OOS R² (Test) & 0.1071 \\ 
+  RMSE (Test) & 0.0243 \\ 
+  MAE (Test) & 0.0178 \\ 
+  CV R² (mean) & 0.0681 \\ 
+  CV R² (std) & 0.0590 \\ 
+  CV RMSE (mean) & 0.0254 \\ 
+  CV RMSE (std) & 0.0064 \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: Support Vector Regression with RBF kernel (sklearn SVR, libsvm backend). Features standardized prior to estimation; scaler fitted exclusively on the training set. Hyperparameters selected via 5-fold blocked cross-validation on the training set, parallelized across all candidate combinations (joblib, n\_jobs=-2). Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead); the model is fixed after Stage 2 and not re-estimated during rolling evaluation. OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.
+\end{minipage}

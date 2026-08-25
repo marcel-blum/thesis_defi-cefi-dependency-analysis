@@ -1,0 +1,16 @@
+\begin{tabular}{lcc}
+  \toprule
+  \textbf{Metric} & \textbf{2018 - 2025} & \textbf{2020 - 2025} \\ 
+  \midrule
+  R² (Train) & 0.0256 & 0.1348 \\ 
+  RMSE (Train) & 0.0542 & 0.0257 \\ 
+  MAE (Train) & 0.0275 & 0.0180 \\ 
+  OOS R² (Test) & -0.0375 & 0.0377 \\ 
+  RMSE (Test) & 0.0255 & 0.0252 \\ 
+  MAE (Test) & 0.0188 & 0.0185 \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: 80/20 chronological train/test split. HC3 heteroskedasticity-robust standard errors on the training set. Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead). OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.
+\end{minipage}

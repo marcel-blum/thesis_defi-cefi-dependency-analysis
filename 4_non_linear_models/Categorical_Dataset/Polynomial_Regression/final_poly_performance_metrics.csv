@@ -1,0 +1,8 @@
+Metric,Value
+Accuracy,0.6096938775510204
+Classification Error,0.39030612244897955
+AUC Score,0.653453689167975
+True Negatives,157.0
+False Positives,53.0
+False Negatives,100.0
+True Positives,82.0

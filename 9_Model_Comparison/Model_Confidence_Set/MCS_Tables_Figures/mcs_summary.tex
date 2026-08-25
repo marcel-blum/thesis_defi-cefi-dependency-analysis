@@ -1,0 +1,17 @@
+\begin{tabular}{lccccc}
+  \toprule
+  \textbf{Model} & \textbf{RMSE} & \textbf{MAE} & \textbf{OOS $R^2$} & \textbf{Mean Sq. Loss} & \textbf{In MCS$^*$} \\ 
+  \midrule
+  MLR & 0.0252 & 0.0185 & 0.0377 & 0.0006 & — \\ 
+  ENet & 0.0247 & 0.0181 & 0.0790 & 0.0006 & — \\ 
+  GAM & 0.0252 & 0.0183 & 0.0387 & 0.0006 & — \\ 
+  XGB & 0.0242 & 0.0175 & 0.1158 & 0.0006 & — \\ 
+  SVR & 0.0243 & 0.0178 & 0.1071 & 0.0006 & — \\ 
+  ARX & 0.0245 & 0.0179 & 0.0903 & 0.0006 & — \\ 
+  TFT & 0.0107 & 0.0070 & 0.8262 & 0.0001 & \checkmark \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: MCS computed following \cite{HansenLundeNason2011}. Range statistic $T_R$ with block bootstrap $p$-values ($B = 5{,}000$ replications; block length $l = \lfloor\sqrt{T}\rfloor$; Newey-West HAC variance estimator). Elimination at significance level $\alpha = 0.10$; models marked \checkmark~belong to the superior model confidence set MCS$^*$. Loss function: squared forecast error. OOS $R^2 = 1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$, where $\text{SS}_{\text{tot}}$ is computed relative to the in-sample training mean. All forecasts obtained via rolling-origin evaluation (one-step-ahead) on the held-out test set.
+\end{minipage}

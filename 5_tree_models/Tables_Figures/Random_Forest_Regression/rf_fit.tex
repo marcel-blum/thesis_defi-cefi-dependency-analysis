@@ -1,0 +1,32 @@
+\begin{table}[h]
+  \centering
+  \caption{\textit{Random Forest Model Fit: TVL Log Return}.}
+  \label{tab:rffit}
+  \begin{tabular}{lc}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\ 
+    \midrule
+    N (Train) & 1566 \\ 
+    N (Test) & 392 \\ 
+    Features & 38 \\ 
+    n\_estimators & 500 \\ 
+    max\_depth & None \\ 
+    max\_features & log2 \\ 
+    min\_samples\_leaf & 1 \\ 
+    OOB R² & 0.1624 \\ 
+     &  \\ 
+    R² (Train) & 0.8848 \\ 
+    RMSE (Train) & 0.009381 \\ 
+    MAE (Train) & 0.006439 \\ 
+    OOS R² (Test) & 0.1201 \\ 
+    RMSE (Test) & 0.024131 \\ 
+    MAE (Test) & 0.017566 \\ 
+    CV R² (mean) & 0.1195 \\ 
+    CV R² (std) & 0.0258 \\ 
+    CV RMSE (mean) & 0.024868 \\ 
+    CV RMSE (std) & 0.006690 \\ 
+    \bottomrule
+  \end{tabular}
+  \vspace{2pt}
+  \footnotesize{\textit{Note}: RandomForestRegressor (scikit-learn), bagged ensemble of regression trees. Complexity hyperparameters (max\_depth, max\_features, min\_samples\_leaf) selected via 5-fold blocked cross-validation on the training set at n\_estimators$=300$; the final ensemble is refit with n\_estimators$=500$ for variance stability. OOB R$^2$ computed from bootstrap out-of-bag samples on the training set. Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead); the ensemble is fixed after Stage 2 and not re-estimated during rolling evaluation. OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.}\\
+\end{table}

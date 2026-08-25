@@ -1,0 +1,51 @@
+\begin{table}[h]
+  \centering
+  \caption{\textit{Random Forest: Feature Importance (Sorted by Permutation Importance)}.}
+  \label{tab:rfimportance}
+  \begin{tabular}{lccc}
+    \toprule
+    \textbf{Variable} & \textbf{Gini Importance} & \textbf{Perm. Importance} & \textbf{Perm. Std.} \\ 
+    \midrule
+    Global\_Stablecoins\_Mcap\_USD\_log\_return & 0.0806 & 0.0349 & 0.0076 \\ 
+    MSCIEM\_log\_return & 0.0468 & 0.0328 & 0.0052 \\ 
+    Global\_Gross\_Revenue\_USD\_log\_return & 0.0697 & 0.0272 & 0.0082 \\ 
+    BTCUSDT\_Vol\_LogGrowth & 0.0359 & 0.0258 & 0.0073 \\ 
+    SP500\_log\_return & 0.0367 & 0.0116 & 0.0038 \\ 
+    ETHUSDT\_Vol\_LogGrowth & 0.0329 & 0.0075 & 0.0044 \\ 
+    BNBUSDT\_Vol\_LogGrowth & 0.0404 & 0.0062 & 0.0059 \\ 
+    EUR\_CNY\_log\_return & 0.0334 & 0.0051 & 0.0026 \\ 
+    SOLUSDT\_Vol\_LogGrowth & 0.0313 & 0.0045 & 0.0024 \\ 
+    Global\_Merchandise\_Vol\_USD\_log\_return & 0.0424 & 0.0035 & 0.0073 \\ 
+    GlobalGold\_log\_return & 0.0346 & 0.0032 & 0.0044 \\ 
+    BNBUSDT\_Log\_Return & 0.0501 & 0.0025 & 0.0023 \\ 
+    SOX\_log\_return & 0.0336 & 0.0023 & 0.0027 \\ 
+    STOXX600\_log\_return & 0.0376 & 0.0022 & 0.0024 \\ 
+    XRPUSDT\_Vol\_LogGrowth & 0.0343 & 0.0014 & 0.0051 \\ 
+    CSI300\_log\_return & 0.0366 & 0.0012 & 0.0031 \\ 
+    ETHUSDT\_Log\_Return & 0.0491 & 0.0010 & 0.0039 \\ 
+    USA\_D\_GDP & 0.0055 & 0.0005 & 0.0003 \\ 
+    CHN\_D\_Liquidity & 0.0036 & 0.0004 & 0.0004 \\ 
+    EZ\_D\_GDP & 0.0043 & 0.0001 & 0.0010 \\ 
+    EZ\_D\_Liquidity & 0.0026 & 0.0000 & 0.0007 \\ 
+    EZ\_Rate\_Cut & 0.0000 & 0.0000 & 0.0000 \\ 
+    USA\_Rate\_Hike & 0.0002 & -0.0000 & 0.0000 \\ 
+    EZ\_D\_CPI & 0.0053 & -0.0000 & 0.0000 \\ 
+    USA\_D\_UR & 0.0052 & -0.0000 & 0.0000 \\ 
+    EZ\_Rate\_Hike & 0.0004 & -0.0000 & 0.0000 \\ 
+    USA\_D\_CPI & 0.0056 & -0.0000 & 0.0000 \\ 
+    EZ\_D\_UR & 0.0125 & -0.0000 & 0.0000 \\ 
+    CHN\_D\_CPI & 0.0049 & -0.0000 & 0.0000 \\ 
+    CHN\_D\_UR & 0.0049 & -0.0000 & 0.0000 \\ 
+    USA\_D\_Liquidity & 0.0042 & -0.0000 & 0.0000 \\ 
+    China\_Rate\_Cut & 0.0003 & -0.0000 & 0.0000 \\ 
+    USA\_Rate\_Cut & 0.0010 & -0.0003 & 0.0013 \\ 
+    EUR\_USD\_log\_return & 0.0349 & -0.0010 & 0.0033 \\ 
+    BTCUSDT\_Log\_Return & 0.0473 & -0.0012 & 0.0026 \\ 
+    USD\_CNY\_log\_return & 0.0348 & -0.0012 & 0.0024 \\ 
+    SOLUSDT\_Log\_Return & 0.0495 & -0.0022 & 0.0031 \\ 
+    XRPUSDT\_Log\_Return & 0.0470 & -0.0033 & 0.0045 \\ 
+    \bottomrule
+  \end{tabular}
+  \vspace{2pt}
+  \footnotesize{\textit{Note}: Gini importance = mean decrease in variance (training set), can be biased toward correlated or high-cardinality features. Permutation importance = mean decrease in $R^2$ over 10 repeats when a feature is randomly shuffled, computed on the held-out test set. Sorted descending by permutation importance.}\\
+\end{table}

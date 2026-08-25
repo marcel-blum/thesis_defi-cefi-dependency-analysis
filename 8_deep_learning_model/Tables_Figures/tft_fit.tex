@@ -1,0 +1,27 @@
+\begin{tabular}{lc}
+  \toprule
+  \textbf{Metric} & \textbf{Value} \\ 
+  \midrule
+  N (Train) & 1566 \\ 
+  N (Test) & 392 \\ 
+  Features & 38 \\ 
+  max\_encoder\_length & 5 \\ 
+  hidden\_size & 64 \\ 
+  attention\_head\_size & 2 \\ 
+  dropout & 0.1 \\ 
+  learning\_rate & 0.0003 \\ 
+  batch\_size & 64 \\ 
+   &  \\ 
+  R² (Train) & 0.7828 \\ 
+  RMSE (Train) & 0.0127 \\ 
+  MAE (Train) & 0.0078 \\ 
+  OOS R² (Test) & 0.8235 \\ 
+  RMSE (Test) & 0.0108 \\ 
+  MAE (Test) & 0.0071 \\ 
+  CV RMSE (best) & 0.0036 \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: Temporal Fusion Transformer (PyTorch Forecasting), MAE loss. The 38 exogenous features are declared as \texttt{time\_varying\_known\_reals} (contemporaneous $X_t$ available at the forecast horizon), the target as \texttt{time\_varying\_unknown\_reals} (lagged target via the encoder only). This mirrors the contemporaneous-regressor information set used by MLR, Elastic Net, GAM, XGBoost, SVR, and ARX, ensuring identical information sets across models for the concluding Diebold-Mariano comparison. Features and target standardized prior to estimation; scaler fitted exclusively on the training set. Hyperparameters selected via 5-fold blocked cross-validation on the training set (enc\_len $\in \{5, 10, 15\}$, hidden\_size $\in \{16, 32\}$, attention\_heads $\in \{1, 2\}$, dropout $\in \{0.1, 0.2\}$; 24 combinations) under MAE loss, identical to the final-model objective. Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead) using the full test window (one prediction per test observation). OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.
+\end{minipage}

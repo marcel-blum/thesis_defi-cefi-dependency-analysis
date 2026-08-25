@@ -1,0 +1,6 @@
+Metric,Value
+Accuracy,0.5612244897959183
+Classification_Error,0.4387755102040817
+ROC_AUC_Score,0.6136665365091762
+Best_n_estimators,1000.0
+Best_min_leaf,1.0

@@ -1,0 +1,27 @@
+\begin{tabular}{lc}
+  \toprule
+  \textbf{Metric} & \textbf{Value} \\ 
+  \midrule
+  N (Train) & 1566 \\ 
+  N (Test) & 392 \\ 
+  Exog. Variables & 23 \\ 
+  Lag Order (p) & 1 \\ 
+  AIC & -6973.2762 \\ 
+  BIC & -6834.0295 \\ 
+   &  \\ 
+  R² (Train) & 0.1395 \\ 
+  RMSE (Train) & 0.0256 \\ 
+  MAE (Train) & 0.0182 \\ 
+  OOS R² (Test) & 0.0903 \\ 
+  RMSE (Test) & 0.0245 \\ 
+  MAE (Test) & 0.0179 \\ 
+  CV R² (mean) & 0.0254 \\ 
+  CV R² (std) & 0.0709 \\ 
+  CV RMSE (mean) & 0.0262 \\ 
+  CV RMSE (std) & 0.0071 \\ 
+  \bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+  \footnotesize \textit{Note}: ARX(p) implemented as SARIMAX(p, 0, 0) with exogenous regressors (statsmodels). Endogenous variable: Global TVL log return. Exogenous variables: 23 Granger-causal predictors (Bonferroni-corrected $\alpha^* \approx 0.0013$). Lag order selected via 5-fold blocked cross-validation on the training set (minimum RMSE). Test-set forecasts obtained via rolling-origin evaluation (one-step-ahead); model parameters are fixed after Stage 2 and not re-estimated during rolling evaluation. OOS R$^2$ = $1 - \text{SS}_{\text{res}} / \text{SS}_{\text{tot}}$.
+\end{minipage}

@@ -1,0 +1,30 @@
+Variable,Vote_Count,Models_Voting,Tier
+EUR_CNY_log_return,4,"Ridge, Lasso, Backward, Forward",4-Vote Variable
+Global_Gross_Revenue_USD_log_return,4,"Ridge, Lasso, Backward, Forward",4-Vote Variable
+MSCIEM,4,"Ridge, Lasso, Backward, Forward",4-Vote Variable
+ETHUSDT_Log_Return,4,"Ridge, Lasso, Backward, Forward",4-Vote Variable
+Global_Stablecoins_Mcap_USD_log_return,4,"Ridge, Lasso, Backward, Forward",4-Vote Variable
+EUR_USD_log_return,3,"Ridge, Lasso, Backward",3-Vote Variable
+XRPUSDT_Vol_LogGrowth,3,"Ridge, Lasso, Backward",3-Vote Variable
+BTCUSDT_Vol_LogGrowth,3,"Ridge, Lasso, Backward",3-Vote Variable
+USD_CNY_log_return,3,"Ridge, Lasso, Backward",3-Vote Variable
+EZ_D_Inflation,2,"Ridge, Lasso",2-Vote Variable
+BTCUSDT_Log_Return,2,"Ridge, Lasso",2-Vote Variable
+EZ_D_Liquidity,2,"Ridge, Lasso",2-Vote Variable
+EZ_D_Growth,2,"Ridge, Lasso",2-Vote Variable
+BNBUSDT_Vol_LogGrowth,2,"Ridge, Lasso",2-Vote Variable
+USA_D_Growth,2,"Ridge, Lasso",2-Vote Variable
+SP500,2,"Ridge, Lasso",2-Vote Variable
+CHN_D_Liquidity,2,"Ridge, Lasso",2-Vote Variable
+GlobalGold,2,"Ridge, Lasso",2-Vote Variable
+SOLUSDT_Vol_LogGrowth,2,"Ridge, Lasso",2-Vote Variable
+USA_D_Liquidity,2,"Ridge, Lasso",2-Vote Variable
+Global_Merchandise_Vol_USD_log_return,2,"Ridge, Lasso",2-Vote Variable
+BNBUSDT_Log_Return,2,"Ridge, Lasso",2-Vote Variable
+China_Rate_Level,2,"Ridge, Lasso",2-Vote Variable
+USA_Rate_Level,2,"Ridge, Lasso",2-Vote Variable
+SOLUSDT_Log_Return,2,"Ridge, Lasso",2-Vote Variable
+XRPUSDT_Log_Return,2,"Ridge, Lasso",2-Vote Variable
+CSI300,2,"Ridge, Lasso",2-Vote Variable
+ETHUSDT_Vol_LogGrowth,2,"Ridge, Lasso",2-Vote Variable
+CHN_D_Inflation,1,Ridge,1-Vote Variable

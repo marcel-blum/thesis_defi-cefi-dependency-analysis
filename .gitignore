@@ -1,0 +1,27 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# PyCharm project settings
+.idea/
+
+# Thesis chapters
+thesis
+
+# Data cannot be published due to licensing rights. Visualizations and tables can be published.
+0_data/*
+!0_data/Raw_Data/
+0_data/Raw_Data/*
+!0_data/Raw_Data/Tables_Figures/
+
+!0_data/0_Dataset_2018_2025/
+0_data/0_Dataset_2018_2025/*
+!0_data/0_Dataset_2018_2025/Raw_Data/
+0_data/0_Dataset_2018_2025/Raw_Data/*
+!0_data/0_Dataset_2018_2025/Raw_Data/Tables_Figures/
