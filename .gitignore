@@ -29,3 +29,6 @@ thesis
 !0_data/0_Dataset_2018_2025/Raw_Data/
 0_data/0_Dataset_2018_2025/Raw_Data/*
 !0_data/0_Dataset_2018_2025/Raw_Data/Tables_Figures/
+# Deep learning training checkpoints - regenerable, not needed for portfolio
+8_deep_learning_model/Continuous_Dataset/checkpoints/
+8_deep_learning_model/Continuous_Dataset/lightning_logs/
