@@ -2,6 +2,8 @@
 
 Master's thesis investigating the degree to which the Decentralized Finance (DeFi) ecosystem's Total Value Locked (TVL) depends on centralized finance (CeFi) and macro-financial drivers, and how accurately that dependency can be forecast across a range of modeling paradigms.
 
+The thesis can be provided on request.
+
 ## Research Focus
 
 - **Dependent variable:** Total Value Locked (TVL) across the DeFi ecosystem
