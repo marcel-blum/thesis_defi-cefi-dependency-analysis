@@ -11,6 +11,10 @@ __pycache__/
 # PyCharm project settings
 .idea/
 
+# Deep learning training checkpoints — regenerable, not needed for portfolio
+8_deep_learning_model/Continuous_Dataset/checkpoints/
+8_deep_learning_model/Continuous_Dataset/lightning_logs/
+
 # Thesis chapters
 thesis
 
